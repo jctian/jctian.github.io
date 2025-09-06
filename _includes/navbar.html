@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
+<nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
         <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,6 +12,17 @@
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
+                <li class="nav-item">
+                    <div class="theme-switcher-container">
+                        <label class="theme-switcher" for="theme-switcher-checkbox">
+                            <input type="checkbox" id="theme-switcher-checkbox" />
+                            <div class="slider round">
+                                <span class="light-icon"><i class="fa-solid fa-sun"></i></span>
+                                <span class="dark-icon"><i class="fa-solid fa-moon"></i></span>
+                            </div>
+                        </label>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

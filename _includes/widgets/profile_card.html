@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-5">
+    <div class="card border-0 shadow-sm bg-white profile-card">
+            <div class="card-body" style="padding: 2.5rem;">
                 <div class="row">
                     <div class="col">
                         {% if site.data.profile.portrait_url %}
@@ -50,7 +50,7 @@
                 <div class="row">
                     <div class="col">
                         <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                            <i class="fas fa-at"></i> <span class="email-text" style="font-family: 'IBM Plex Mono','Roboto Mono';">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
                         </a>
 
                         {% if site.data.profile.gscholar %}

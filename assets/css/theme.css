@@ -1,0 +1,19 @@
+:root {
+  --background-color: #efefef;
+  --text-color: #212529;
+  --card-background-color: #fefefe;
+  --card-shadow-color: rgba(0, 0, 0, 0.075);
+  --border-color: #dee2e6;
+  --link-color: #2583e8;
+  --muted-text-color: #6c757d;
+}
+
+[data-theme="dark"] {
+  --background-color: #333333;
+  --text-color: #e0e0e0;
+  --card-background-color: #444444;
+  --card-shadow-color: rgba(255, 255, 255, 0.1);
+  --border-color: #343a40;
+  --link-color: #80bfff;
+  --muted-text-color: #adb5bd;
+}
